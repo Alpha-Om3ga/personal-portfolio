@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Wiseman – IT Professional</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="pport.css" />
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">Ryan Wiseman</div>
+	<nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="./Resume.New.pdf" target="_blank" class="download-btn">Download Resume</a>
+    </nav>
+  </header>
+
+  <!-- Landing Section -->
+  <section1 id="home">
+    <div class="landing">
+      <div class="landing-content">
+        <div class="portrait"></div>
+        <h1 class="glitch-title">IT Professional</h1>
+      </div>
+    </div>
+  </section1>
+
+<section id="about" class="about-me">
+  <h2>About Me</h2>
+
+  <!-- Floating shapes container -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <div class="about-container">
+    <div class="about-image">
+      <img src="./images/Ryan1.jpeg" alt="Ryan Wiseman Portrait">
+    </div>
+    <div class="about-text">
+      <p>Hi, my name is Ryan Wiseman, and I grew up in Jonesboro, AR. I served in the United States Marine Corps as an infantryman with the 2nd Battalion, 1st Marines, Echo Company.</p>
+      <p>After completing my service, I pursued my passion for technology, earning a Bachelor’s degree in Computer Information Technology from Arkansas State University in 2020. I began my IT career as a Pharmacy Informatics Technician at St. Bernard's Medical Center and later transitioned to the Service Desk, where I have been honing my technical skills and supporting users ever since.</p>
+      <p>I am currently focused on expanding my expertise in networking, aiming to grow professionally while leveraging my IT experience and problem-solving skills.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Service Desk Technician II – St. Bernard’s Medical Center</h3>
+        <span>Nov 2021 – Present | Jonesboro, AR</span>
+        <p>Managed Active Directory, deployed and maintained computers/printers/tablets/VMs. Troubleshot Layer 1 and assisted with Layer 2 networking. Resolved issues via Zendesk/Jira and trained new employees.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Pharmacy Informatics – St. Bernard’s Medical Center</h3>
+        <span>Mar 2020 – Nov 2021 | Jonesboro, AR</span>
+        <p>Maintained Meditech database with SQL and MAGIC, monitored inventory, deployed security cameras, installed/updated hardware/software per regulations.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Technician – Dish Network</h3>
+        <span>2019</span>
+        <p>Installed/configured satellite systems, ran network cables, educated customers.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Infantryman – U.S. Marine Corps</h3>
+        <span>2007 – 2011</span>
+        <p>Team leadership, communication systems management, technical coordination.</p>
+      </div>
+    </div>
+
+    <h2>Education & Certifications</h2>
+    <div class="education-item">
+      <h3>B.S. in Computer Information Technology</h3>
+      <span>Arkansas State University | Fall 2016 – Spring 2020 | Jonesboro, AR</span>
+    </div>
+    <div class="education-item certifications">
+      <h2>Badges:</h2>
+      <a href="https://www.comptia.org/certifications/a" target="_blank"><img src="./images/aplus.png" alt="CompTIA A+" aria-label="CompTIA A+"></a>
+      <a href="https://www.comptia.org/certifications/network" target="_blank"><img src="./images/networkplus.png" alt="CompTIA Network+" aria-label="CompTIA Network+"></a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid" id="project-list"></div>
+  </section>
+
+  <!-- Modal for Project Details -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" id="modal-close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.linkedin.com/in/rcwiseman/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.comptia.org/" target="_blank" aria-label="CompTIA"><i class="fas fa-certificate"></i></a>
+    <a href="https://www.cisco.com/" target="_blank" aria-label="Cisco"><i class="fas fa-network-wired"></i></a>
+    <a href="https://github.com/Alpha-Om3ga" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- Particles JS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="pport.js" defer></script>
+</body>
+</html>
