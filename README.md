@@ -3,7 +3,7 @@
 This repository contains the code for my personal website, which showcases my IT experience, projects, and resume.
 
 ## 🌐 Live Website
-[View Website](https://http://ryans-portfolio-website.s3-website.us-east-2.amazonaws.com/)
+[View Website](https://www.ryanitportfolio.com)
 
 ## 💻 Technologies
 - HTML5, CSS3, JavaScript
