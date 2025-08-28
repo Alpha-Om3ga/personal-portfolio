@@ -12,23 +12,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="pport.css" />
+  <link rel="stylesheet" href="pport.css?v=1.3" />
 </head>
 <body>
   <!-- Particles Background -->
   <div id="particles-js"></div>
 
   <!-- Header / Navigation -->
-  <header>
-    <div class="logo">Ryan Wiseman</div>
-	<nav>
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#resume">Resume</a>
-      <a href="#projects">Projects</a>
-      <a href="./Resume.New.pdf" target="_blank" class="download-btn">Download Resume</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">Ryan Wiseman</div>
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+
+    <!-- Resume Dropdown -->
+    <div class="download-resume-dropdown">
+      <button class="download-btn">Download Resume <i class="fas fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="./Resume.New.pdf" target="_blank">Designed Resume</a>
+        <a href="./Resume.ATS.pdf" target="_blank">ATS Resume</a>
+      </div>
+    </div>
+
+  </nav>
+</header>
 
   <!-- Landing Section -->
   <section1 id="home">
@@ -69,22 +78,56 @@
       <div class="timeline-item">
         <h3>Service Desk Technician II – St. Bernard’s Medical Center</h3>
         <span>Nov 2021 – Present | Jonesboro, AR</span>
-        <p>Managed Active Directory, deployed and maintained computers/printers/tablets/VMs. Troubleshot Layer 1 and assisted with Layer 2 networking. Resolved issues via Zendesk/Jira and trained new employees.</p>
+        <p>Managed Active Directory: created/updated users, groups, and organizational units.<br>
+			Deployed and maintained computers, laptops, tablets, printers, and virtual machines (Citrix/Horizon/Wyse Management Suite). <br>
+			Installed and updated software/hardware, ensuring system compliance and performance. <br>
+			Built and deployed kiosk systems (e.g., gym sign-up, security monitoring).<br>
+			Provided hardware/software troubleshooting through Zendesk and Jira; received multiple “bravos” for exceptional service.<br>
+			Performed network troubleshooting (Layer 1) and collaborated with the networking team for Layer 2 issues.<br>
+			Helped manage IT inventory: created purchase orders, tracked software licenses, IP addresses, and updated asset records.<br>
+			Assisted with EMR integration: linked scan stations, enabled user access, and configured PIN verification.<br>
+			Trained new employees and led team IT projects to improve efficiency.
+		</p>
       </div>
       <div class="timeline-item">
         <h3>Pharmacy Informatics – St. Bernard’s Medical Center</h3>
         <span>Mar 2020 – Nov 2021 | Jonesboro, AR</span>
-        <p>Maintained Meditech database with SQL and MAGIC, monitored inventory, deployed security cameras, installed/updated hardware/software per regulations.</p>
+        <p>Maintained Meditech database using SQL and MAGIC programming.<br>
+			Created SQL reports and implemented custom rules for drug ordering workflows.<br>
+			Updated and validated National Drug Code (NDC) data to ensure compliance and accuracy.<br>
+			Installed and updated hardware/software across medical systems.<br>
+			Monitored and deployed security measures: IP cameras, Omnicell access controls, and thermal sensors for drug storage.<br>
+			Conducted compliance checks to ensure medications were properly stored, secured, and labeled per pharmaceutical regulations.<br>
+			Tracked and managed Omnicell inventory levels to support pharmacy operations.<br>
+		</p>
       </div>
       <div class="timeline-item">
         <h3>Technician – Dish Network</h3>
-        <span>2019</span>
-        <p>Installed/configured satellite systems, ran network cables, educated customers.</p>
+        <span>2019 | Jonesboro, AR</span>
+        <p>Installed and configured satellite systems; triangulated and aligned dishes for optimal reception.<br>
+			Ran network and coaxial cables through residential/commercial properties, performing custom cable drops when required.<br>
+			Educated customers on system use and provided post-installation support.<br>
+			Documented work performed per purchase order requirements.<br>
+			Maintained workflow efficiency to meet scheduled appointments.<br>
+			Managed van inventory and performed preventive maintenance on work vehicle.<br>
+		<p>
       </div>
       <div class="timeline-item">
         <h3>Infantryman – U.S. Marine Corps</h3>
-        <span>2007 – 2011</span>
-        <p>Team leadership, communication systems management, technical coordination.</p>
+        <span>2007 – 2011 | Camp Pendleton, CA</span>
+        <p><h4>Operation Enduring Freedom (Afghanistan) – Training NCO / Company Driver (2010–2011)</h4><br>
+
+			Oversaw training readiness for 250+ Marines, maintaining certifications for weapons, leadership, driving, and specialty schools.<br>
+			Coordinated and scheduled training programs to ensure unit compliance and readiness.<br>
+			Maintained, operated, and transported personnel using tactical vehicles (MRAP, HUMVEE, 7-Ton).<br>
+			Enforced safety protocols and vehicle maintenance procedures.<br><br>
+
+			<h4>Operation Iraqi/Enduring Freedom (Iraq) – Radio Operator (2009)</h4><br>
+
+			Operated and maintained radio communication systems valued at $500K+ during patrols and convoys.<br>
+			Ensured continuous communication between field units and base command.<br>
+			Trained platoon members in proper operation and troubleshooting of communications equipment.<br>
+		</p>
       </div>
     </div>
 
@@ -94,11 +137,22 @@
       <span>Arkansas State University | Fall 2016 – Spring 2020 | Jonesboro, AR</span>
     </div>
     <div class="education-item certifications">
-      <h2>Badges:</h2>
+      <h3>Badges:</h3>
       <a href="https://www.comptia.org/certifications/a" target="_blank"><img src="./images/aplus.png" alt="CompTIA A+" aria-label="CompTIA A+"></a>
       <a href="https://www.comptia.org/certifications/network" target="_blank"><img src="./images/networkplus.png" alt="CompTIA Network+" aria-label="CompTIA Network+"></a>
-    </div>
+	</div>
   </section>
+	
+<!--   <section id="download"> may use this for download files later ...
+    <h2>Download Resume</h2>
+    <div class="downloads">
+      <button class="download-btn">Word Files ▼</button>
+      <div class="dropdown-content">
+        <a href="./Resume.New.pdf" target="_blank">Designed Resume</a>
+        <a href="./Resume.ATS.pdf" target="_blank">ATS-Friendly Resume</a>
+      </div>
+    </div>
+  </section> -->
 
   <!-- Projects Section -->
   <section id="projects">
@@ -129,6 +183,6 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <!-- Custom JS -->
-  <script src="pport.js" defer></script>
+  <script src="pport.js?v=1.3" defer></script>
 </body>
 </html>

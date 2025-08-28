@@ -34,6 +34,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =====================================
+     Resume Download Dropdown
+  ====================================== */
+  const downloadDropdown = document.querySelector('.download-resume-dropdown');
+  const downloadBtn = downloadDropdown.querySelector('.download-btn');
+
+  downloadBtn.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent closing immediately
+    downloadDropdown.classList.toggle('show');
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener('click', function() {
+    downloadDropdown.classList.remove('show');
+  });
+
+  /* =====================================
      Navigation Active Link Highlight
   ====================================== */
   const sections = document.querySelectorAll("section[id]");
@@ -90,12 +106,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Failed to load repos", e);
     }
   }
-
   loadRepos();
 
   /* Modal Close Logic */
   const modal = document.getElementById("project-modal");
-  document.getElementById("modal-close").addEventListener("click", () => modal.classList.remove("show"));
+  const modalClose = document.getElementById("modal-close");
+
+  modalClose.addEventListener("click", () => modal.classList.remove("show"));
   window.addEventListener("click", e => { if (e.target.id === "project-modal") modal.classList.remove("show"); });
   window.addEventListener("keydown", e => { if (e.key === "Escape") modal.classList.remove("show"); });
 
@@ -116,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
      Section Glow Dividers
   ====================================== */
   const sectionsWithDividers = Array.from(sections).slice(1); // skip first section
-
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY + window.innerHeight / 2;
     sectionsWithDividers.forEach(section => {
